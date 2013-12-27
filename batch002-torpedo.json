@@ -1,0 +1,17 @@
+{
+  "batch-id": 2,
+  "grain-bill": {
+    "2-Row": "14 lbs",
+    "Crystal 60L": "1 lbs",
+    "CaraPils": "1 lbs"
+  },
+  "hopping": {
+    "2 oz Magnum":"60 mins",
+    "1 oz Magnum":"5 mins",
+    "1 oz Crystal":"5 mins",
+    "0.67 oz Magnum": "Dry Hop - 10 Days",
+    "0.67 oz Crystal": "Dry Hop - 10 Days",
+    "0.67 oz Citra": "Dry Hop - 10 Days"
+  },
+  "yeast": "American Ale Wyeast"
+}

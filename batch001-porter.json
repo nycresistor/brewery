@@ -1,0 +1,18 @@
+{
+  "batch-id": 1,
+  "grain-bill": {
+    "6-Row": "6 lbs",
+    "Black Malt": "0.25 lbs",
+    "Roasted Malt": "0.5 lbs",
+    "Chocolate Malt": "10 oz",
+    "Caramel Malt, 40 degree": "0.75 lb",
+  },
+  "additives": {
+    "dextrose": "0.75 lb",
+    "irish moss": "a pinch"
+  },
+  "hopping": {
+    "Northern Brewer Hops": "60 min"
+  },
+  "yeast": "1098 yeast"
+}
