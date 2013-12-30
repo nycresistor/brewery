@@ -1,0 +1,18 @@
+{
+  "batch-id": 3,
+  "grain-bill": {
+    "maris otter": "17.5 lbs",
+    "40L": "13 oz",
+    "120L": "13 oz"
+  },
+  "hopping": {
+    "1 oz Horizon":"60 mins",
+    "1 oz Kent Goldings":"30 mins",
+    "1 oz Kent Goldings":"Flame out"
+  },
+  "yeast": [
+    "Irish Ale Wyest 1084",
+    "American Ale Wyeast 1056",
+    "2 quart/6oz dme starter
+  ]
+}
