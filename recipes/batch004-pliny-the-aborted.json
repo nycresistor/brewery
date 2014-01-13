@@ -1,0 +1,26 @@
+{
+  "batch-id": 4,
+  "batch-name": "Pliny the Aborted",
+  "grain-bill": {
+    "2 row": "17.25 lbs",
+    "Cara Pils": "12 oz",
+    "40c": "6 oz",
+    "Dextrose": "1 lb",
+    "pre boil gravity": "1.040"
+  },
+  "hopping": {
+    "3 oz Warrior":"60 mins",
+    "1.5 oz Symco":"30 mins",
+    "0.5 oz Centennial":"30 mins",
+    "0.5 oz Chinook":"30 mins",
+    "2.5 oz Symco":"0 mins",
+    "1.5 oz Centennial":"0 mins",
+    "0.5 oz Chinook":"0 mins"
+  },
+  "yeast": [
+    "American Ale Wyeast 1056",
+    "American Ale Wyeast 1056",
+    "American Ale Wyeast 1056",
+    "2 grams Calcium Carbonate"
+  ]
+}
