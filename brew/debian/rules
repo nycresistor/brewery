@@ -1,8 +1,9 @@
 #!/usr/bin/make -f
 
-PACKAGE = brew-api
+PACKAGE = python-brew
+SOURCE = brew
 SRC_VERSION := $(shell python -B -c "import setup; print setup.PKG_DATA['version']")
-TARBALL = "$(PACKAGE)_$(SRC_VERSION).orig.tar.gz"
+TARBALL = "$(SOURCE)_$(SRC_VERSION).orig.tar.gz"
 .PHONY: get-orig-source
 
 %:
@@ -20,4 +21,4 @@ get-orig-source:
 
 override_dh_clean:
 	dh_clean
-	rm -rf brew-api.egg-info
+	rm -rf python-brew.egg-info

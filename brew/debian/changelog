@@ -1,4 +1,4 @@
-brew-api (0.0.1ubuntu1) precise; urgency=low
+python-brew (0.0.1ubuntu1) precise; urgency=low
 
   * Initial Changelog Creation.
     See http://brewery.nycresistor.com/

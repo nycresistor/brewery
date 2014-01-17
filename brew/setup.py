@@ -2,7 +2,7 @@
 
 from distutils.core import setup
 
-setup(name='brew-api',
+setup(name='brew',
       version='0.0.1',
       description='NYC Resistor Brewery API',
       author='Matt Joyce',
