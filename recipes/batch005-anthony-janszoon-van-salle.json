@@ -1,0 +1,31 @@
+{
+  "batch-id": 5,
+  "batch-name": "anthony janszoon van salle morrocan porter"
+  "grain-bill": {
+    "maris otter": "6 lbs",
+    "6-row": "6 lbs",
+    "Brown Malt": "2 lbs",
+    "Black Patent Malt": "1 lb"
+  },
+  "mashtime": "90 mins",
+  "mashtempinit": "152",
+  "mashtempfinal": "150",
+  "gravities": {
+    "preboil":"1.032",
+    "og":"1.055"
+  }
+  "hopping": {
+    "1 oz Belma (9.8 AA)":"60 mins",
+    "1 oz UK Fuggle (5.3 AA)":"30 mins",
+    "1 oz Kent Golding (7.2 AA)":"Flame out"
+  },
+  "spices": {
+    ".5 lb Dates": "30 mins",
+    "10 oz Ginger": "10 mins",
+    "4 sticks cinnamon": "Flameout",
+    "Whole Clove": "Flameout"
+  }
+  "yeast": [
+    "2 wetpack", "1099 Whitebread Ale"
+  ]
+}
