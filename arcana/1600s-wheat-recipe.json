@@ -1,0 +1,15 @@
+{
+  "name" : "1600s wheat malt",
+  "type" : "sengyll beer",
+  "source" : "curiosities of ale and beer page 106",
+  "recipe" {
+      "malte" : "10 quartes",
+      "wheete" : "2 quarters",
+      "oates" : "2 quarters",
+      "hoppys" : "40 pound weight",
+   },
+   "yield" : "60 barellys",
+   "barel of aell yield" : "32 galones",
+   "barrell of beer yield" : "36 gallons"
+}
+
