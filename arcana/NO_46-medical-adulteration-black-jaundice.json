@@ -1,0 +1,13 @@
+{
+  "name" : "No 46. A notable Receipt for the black Jaundice",
+  "type" : "medical adulteration",
+  "source" : "curiosities of ale and beer page 410",
+  "recipe" {
+      "Ale" : "1 Gallon",
+      "Honey" : "1 Pint",
+      "Red Nettles" : "Handful",
+      "Saffron" : "1-2 pennyworth"
+   },
+   "instructions" : "Take a gallon of Ale, a pint of honey, and two handfuls of red nettles and take a penny worth or two of Saffron, and boil it in the Ale, The ale being first skimmed and then boil the Hony and Nettles therein all together and strain it well. and every morning take a good Draught thereof for the space of a fortnight.  For in that space ( God willing ) it will clean and perfectly cure the Black Jaundice."
+}
+

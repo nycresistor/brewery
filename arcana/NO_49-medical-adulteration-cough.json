@@ -1,0 +1,11 @@
+{
+  "name" : "No 49. For a cough",
+  "type" : "Medical Adulterations",
+  "source" : "curiosities of ale and beer page 410",
+  "recipe" {
+    "Ale" : "1 Quart",
+    "Red Sage" : "Handful",
+    "Treacle" : "Quarter Pound"
+  },
+  "instructions" : "Take a quart of the Ale and put a handful of red sage into it, and boyl it half away; strain it, and put to the liquor a quarter of a pound of treacle, drink it warm before going to bed."
+} 
