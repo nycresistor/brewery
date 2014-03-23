@@ -1,0 +1,18 @@
+{
+  "batch-id": 6,
+  "grain-bill": {
+    "Maris-Otter": "7.5 lbs",
+    "Black Patent": "0.6 lbs",
+    "Brown Malt": "2.5 lbs",
+  },
+  "hopping": {
+    "Fuggles": "1.5oz 60 min",
+    "Fuggles": ".5oz 5 min"
+  },
+  "yeast": "1028 wyeast"
+  "gravities": {
+    "pre-boil gravity": "1.040",
+    "OG": "",
+    "FG": ""
+}
+
