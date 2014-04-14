@@ -1,5 +1,6 @@
 {
   "batch-id": 3,
+  "batch-name": "Weesistor Heavy",
   "grain-bill": {
     "maris otter": "17.5 lbs",
     "40L": "13 oz",
@@ -8,7 +9,8 @@
   "hopping": {
     "1 oz Horizon":"60 mins",
     "1 oz Kent Goldings":"30 mins",
-    "1 oz Kent Goldings":"Flame out"
+    "1 oz Kent Goldings":"Flame out",
+    "1.5 lbs Peated Malt":"Steeped 1.5 weeks in keg"
   },
   "yeast": [
     "Irish Ale Wyest 1084",
