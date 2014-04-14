@@ -1,6 +1,9 @@
 {
   "batch-id": 3,
   "batch-name": "Weesistor Heavy",
+  "OG": "1.064", 
+  "FG": "1.012",
+  "ABV": "6.9",
   "grain-bill": {
     "maris otter": "17.5 lbs",
     "40L": "13 oz",
