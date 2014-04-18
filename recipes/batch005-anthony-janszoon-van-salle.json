@@ -12,7 +12,8 @@
   "mashtempfinal": "150",
   "gravities": {
     "preboil":"1.032",
-    "og":"1.055"
+    "og":"1.055",
+    "fg":"1.013"
   }
   "hopping": {
     "1 oz Belma (9.8 AA)":"60 mins",
