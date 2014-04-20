@@ -1,0 +1,20 @@
+{
+  "batch-id": 7,
+  "grain-bill": {
+    "Maris-Otter": "16.2 lbs",
+    "2 Row": "5 lbs",
+    "Black Patent": "2 lbs",
+    "Brown Malt": "2 lbs",
+    "Flaked Wheat": "1.5 lbs"
+  },
+  "hopping": {
+    "East Kent Goldings": "2oz 60 min",
+    "East Kent Goldings": "2oz 15 min", 
+    "Fuggles": "1.5oz 60 min",
+    "Fuggles": ".5oz 5 min"
+  },
+  "yeast": "3x 1028 wyeast"
+  "gravities": {
+  }
+}
+
