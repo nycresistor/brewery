@@ -8,13 +8,17 @@
     "Flaked Wheat": "1.5 lbs"
   },
   "hopping": {
-    "East Kent Goldings": "2oz 60 min",
-    "East Kent Goldings": "2oz 15 min", 
-    "Fuggles": "1.5oz 60 min",
-    "Fuggles": ".5oz 5 min"
+    "East Kent Goldings": "2oz 60 min 1",
+    "East Kent Goldings": "2oz 15 min 1", 
+    "Fuggles": "1.5oz 60 min 2",
+    "Fuggles": ".5oz 5 min 2"
   },
   "yeast": "3x 1028 wyeast"
   "gravities": {
+      "pre-boil-1": "1.080",
+      "pre-boil-2": "",
+      "OG-1": "",
+      "OG-2": ""
   }
 }
 
