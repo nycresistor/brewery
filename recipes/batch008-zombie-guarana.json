@@ -1,0 +1,27 @@
+{
+  "batch-id": 8,
+  "batch-name": "zombie guarana IPA",
+  "grain-bill": {
+    "Maris-Otter": "12 lbs",
+    "Munich Malt Dark": "1.2 lbs",
+    "Carapils": "0.5 lbs",
+    "Caramel/Crystal Malt 60L": "0.5 lbs",
+    "Melanoiden Malt": "0.5lbs"
+  },
+  "hopping": {
+    "Citra": "0.75 oz First Wort Hop",
+    "Citra": "1.25 oz 15 min",
+    "Citra": "1.25 oz 10 min", 
+    "Citra": "1.25 5 min",
+    "Citra": "1.25 1 min"
+  },
+  "yeast": "3x 1028 wyeast",
+  "mash temp": "154 60mins",
+  "gravities": {
+      "pre-boil": "1.040",
+      "OG": "",
+      "FG": "",
+      "ABV": ""
+  }
+}
+
