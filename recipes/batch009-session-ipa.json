@@ -1,6 +1,6 @@
 {
   "batch-id": 9,
-  "batch-name": "Session IPA",
+  "batch-name": "123 Session IPA",
   "grain-bill": {
     "NY 2-Row": "10.5 lbs",
     "Cara-Pils": "7 lbs",
@@ -8,8 +8,7 @@
   "hopping": {
     "Columbus": "1.5 oz 60mins",
     "Cascade": "1 oz 60mins",
-    "Cascade": "1 oz 5 min",
-    "Cascade": "1 oz 0 min", 
+    "Cascade": "2 oz 5 min",
     "Cascade": "3 oz Dry Hop Secondary",
   },
   "yeast": "2x 1056 wyeast",
@@ -18,9 +17,8 @@
   "mash final": "152",
   "gravities": {
       "pre-boil": "1.020",
-      "OG": "",
+      "OG": "1.028",
       "FG": "",
       "ABV": ""
   }
 }
-
