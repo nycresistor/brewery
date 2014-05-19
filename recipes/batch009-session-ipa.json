@@ -3,13 +3,13 @@
   "batch-name": "123 Session IPA",
   "grain-bill": {
     "NY 2-Row": "10.5 lbs",
-    "Cara-Pils": "7 lbs",
+    "Cara-Pils": "7 lbs"
   },
   "hopping": {
     "Columbus": "1.5 oz 60mins",
     "Cascade": "1 oz 60mins",
     "Cascade": "2 oz 5 min",
-    "Cascade": "3 oz Dry Hop Secondary",
+    "Cascade": "3 oz Dry Hop Secondary"
   },
   "yeast": "2x 1056 wyeast",
   "mash time": "60 mins",

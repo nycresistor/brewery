@@ -1,0 +1,31 @@
+{
+  "batch-id": 10,
+  "batch-name": "Hop Hammerish IPA",
+  "grain-bill": {
+    "Briess 2-Row": "15.25 lbs",
+    "Briess Caramel Malt 40L": "0.5 lbs",
+    "Briess White Wheat Malt": "0.5 lbs"
+  },
+  "hopping": {
+    "Warrior": "2 oz 90 mins",
+    "Chinook": "2 oz 90 mins",
+    "Simcoe": "1 oz 45 min",
+    "Columbus": "1 oz 30 min",
+    "1 teaspoon irish moss 10 min",
+    "1/2 teaspoon yeast strengthener 10 min",
+    "Armarillo": "2.25 oz 1 min",
+    "Centennial": "1.75 oz 7 Days Dry Hop",
+    "Columbus": "3.25 oz 7 Days Dry Hop",
+    "Simcoe": "1.75 oz 7 Days Dry Hop"
+  },
+  "yeast": "3x 1056 wyeast",
+  "mash time": "60 mins",
+  "mash init": "151",
+  "mash final": "149",
+  "gravities": {
+      "pre-boil": "1.038",
+      "OG": "1.062",
+      "FG": "",
+      "ABV": ""
+  }
+}
