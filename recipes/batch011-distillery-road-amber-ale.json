@@ -1,0 +1,29 @@
+{
+  "batch-id": 11,
+  "batch-name": "Distillery Road Amber Ale",
+  "grain-bill": {
+    "Maris Otter": "10.5 lbs",
+    "Briess Caramel Malt 40L": "0.5 lbs",
+    "Briess Caramel Malt 120L": "0.33 lbs",
+    "Melanoidin": "0.5 lbs",
+    "Gambrinus Honey Malt": "0.5lbs"
+  },
+  "hopping": {
+    "Magnum 0.25 oz": "60 min",
+    "Magnum 0.5 oz": "20 min",
+    "Cascade 1.75 oz": "10 min",
+    "Amarillo 1.0 oz": "10 min",
+    "Cascade 1.75 oz": "1 min",
+    "Amarillo 1.0 oz": "1 min"
+  },
+  "yeast": "3x 1058 wyeast",
+  "mash time": "60 mins",
+  "mash init": "157",
+  "mash final": "",
+  "gravities": {
+      "pre-boil": "",
+      "OG": "",
+      "FG": "",
+      "ABV": ""
+  }
+}
