@@ -19,10 +19,10 @@
   "yeast": "3x 1058 wyeast",
   "mash time": "60 mins",
   "mash init": "157",
-  "mash final": "",
+  "mash final": "154",
   "gravities": {
-      "pre-boil": "",
-      "OG": "",
+      "pre-boil": "1.044",
+      "OG": "1.058",
       "FG": "",
       "ABV": ""
   }
