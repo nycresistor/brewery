@@ -7,25 +7,43 @@
     "Briess White Wheat Malt": "0.5 lbs"
   },
   "hopping": {
-    "Warrior": "2 oz 90 mins",
-    "Chinook": "2 oz 90 mins",
-    "Simcoe": "1 oz 45 min",
-    "Columbus": "1 oz 30 min",
-    "1 teaspoon irish moss 10 min",
-    "1/2 teaspoon yeast strengthener 10 min",
-    "Armarillo": "2.25 oz 1 min",
-    "Centennial": "1 oz 7 Days Dry Hop",
-    "Columbus": "1 oz 7 Days Dry Hop",
-    "Simcoe": "1 oz 7 Days Dry Hop"
+    "90 mins": {
+      "Warrior": "2 oz",
+      "Chinook": "2 oz"
+    },
+    "45 mins": {
+      "Simcoe": "1 oz"
+    },
+    "30 mins": {
+      "Columbus": "1 oz"
+    },
+    "10 mins": {
+      "irish moss": "1 teaspoon",
+      "yeast strengthener": "1/2 teaspoon"
+    },
+    "1 min": {
+      "Armarillo": "2.25 oz"
+    }
   },
-  "yeast": "3x 1056 wyeast",
-  "mash time": "60 mins",
-  "mash init": "151",
-  "mash final": "149",
+  "dry-hopping": {
+    "7 Days": {
+      "Centennial": "1 oz",
+      "Columbus": "1 oz",
+      "Simcoe": "1 oz"
+    }
+  },
+  "yeast": {
+    "1056 wyeast": "300 billion cells"
+  },
+  "mash": {
+    "duration": "60 mins",
+    "start temp": "151 F",
+    "final temp": "149 F"
+  },
   "gravities": {
       "pre-boil": "1.038",
       "OG": "1.062",
-      "FG": "",
+      "FG": "1.009",
       "ABV": ""
   }
 }

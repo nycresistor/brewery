@@ -10,17 +10,39 @@
     "Guarana Seed Powder": "0.75 lbs"
   },
   "hopping": {
-    "Citra": "0.75 oz First Wort Hop",
-    "Northern Brewer": "1 oz 45 min",
-    "Citra": "1.25 oz 15 min",
-    "Citra": "1.25 oz 10 min", 
-    "Citra": "1.25 5 min",
-    "Citra": "1.25 1 min",
-    "Citra": "3 oz Dry Hopping",
-    "Cascade": "2 oz Dry Hopping"
+    "60 mins": {  
+      "Citra": "0.75 oz"
+    },
+    "45 mins": {
+      "Northern Brewer": "1 oz"
+    },
+    "15 mins": {
+      "Citra": "1.25 oz"
+    },
+    "10 mins": {
+      "Citra": "1.25 oz"
+    },
+    "5 mins": {
+      "Citra": "1.25 5 min"
+    },
+    "1 mins": {
+      "Citra": "1.25 1 min"
+    }
   },
-  "yeast": "2x 1275 thames valley wyeast",
-  "mash temp": "154 60mins",
+  "dry-hopping": {
+    "7 Days" : {
+      "Citra": "3 oz",
+      "Cascade": "2 oz"
+    }
+  },
+  "yeast": {
+    "1275 thames valley wyeast" : "200 billion cells"
+  },
+  "mash": {
+    "duration": "60 mins",
+    "temp start": "156 F",
+    "temp final": "154 F"
+  },
   "gravities": {
       "pre-boil": "1.040",
       "OG": "1.062",

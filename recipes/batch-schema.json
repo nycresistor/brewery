@@ -1,0 +1,41 @@
+{
+  "batch-id": 0,
+  "batch-name": "example recipe schema",
+  "grain-bill": {
+    "Maris Otter": "10.5 lbs",
+    "Briess Caramel Malt 40L": "0.5 lbs",
+    "Briess Caramel Malt 120L": "0.33 lbs",
+    "Melanoidin": "0.5 lbs",
+    "Gambrinus Honey Malt": "0.5lbs"
+  },
+  "hopping": {
+    "60 min": { 
+      "Magnum": "0.25 oz"
+    },
+    "20 min": {
+      "Magnum": "0.5 oz"
+    },
+    "10 min": {
+      "Cascade": "1.75 oz",
+      "Amarillo": "1.0 oz"
+    },
+    "1 min": {
+      "Cascade": "1.75 oz",
+      "Amarillo": "1.0 oz"
+    }
+  },
+  "yeast": {
+      "1058 wyeast": "300 billion cells"
+  },
+  "mash": {
+      "duration": "60 mins",
+      "temp start": "157",
+      "temp final": "154"
+  },
+  "gravities": {
+      "pre-boil": "1.044",
+      "OG": "1.058",
+      "FG": "1.010",
+      "ABV": ""
+  }
+}
