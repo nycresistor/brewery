@@ -9,12 +9,20 @@
     "Gambrinus Honey Malt": "0.5lbs"
   },
   "hopping": {
-    "Magnum 0.25 oz": "60 min",
-    "Magnum 0.5 oz": "20 min",
-    "Cascade 1.75 oz": "10 min",
-    "Amarillo 1.0 oz": "10 min",
-    "Cascade 1.75 oz": "1 min",
-    "Amarillo 1.0 oz": "1 min"
+    "60 mins":[
+        "Magnum": "0.25 oz"
+    ],
+    "20 mins":[
+        "Magnum": "0.5 oz"
+    ],
+    "10 mins":[
+        "Cascade": "1.75 oz",
+        "Amarillo": "1.0 oz"
+    ],
+    "1 mins":[
+        "Cascade": "1.75 oz",
+        "Amarillo": "1.0 oz"
+    ]
   },
   "yeast": "3x 1058 wyeast",
   "mash time": "60 mins",
@@ -23,7 +31,7 @@
   "gravities": {
       "pre-boil": "1.044",
       "OG": "1.058",
-      "FG": "",
-      "ABV": ""
+      "FG": "1.010",
+      "ABV": "6.3 %"
   }
 }
