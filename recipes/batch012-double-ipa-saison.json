@@ -1,0 +1,38 @@
+{
+  "batch-id": 12,
+  "batch-name": "Double IPA Saison",
+  "grain-bill": {
+    "Bohemian Pilsner": "15.5 lbs",
+    "White Wheat": "1 lbs",
+    "Light Munich": "1 lbs"
+  },
+  "hopping": {
+    "90 mins":{
+        "Warrior": "2 oz",
+        "Chinook": "2 oz"
+    },
+    "60 mins":{
+        "Hallertau": "2 oz"
+    },
+    "45 mins":{
+        "Simcoe": "1 oz"
+    },
+    "30 mins":{
+        "Centennial": "1 oz"
+    },
+    "1 mins":{
+        "Columbus": "3 oz",
+        "Saaz": "1.0 oz"
+    }
+  },
+  "yeast": "3x Wyeast 3711 French Saison",
+  "mash time": "60 mins",
+  "mash init": "148",
+  "mash final": "",
+  "gravities": {
+      "pre-boil": "",
+      "OG": "",
+      "FG": "",
+      "ABV": ""
+  }
+}

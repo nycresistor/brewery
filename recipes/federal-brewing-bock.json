@@ -1,0 +1,32 @@
+{
+  "batch-id": 999,
+  "batch-name": "Federal Brewing Co. Bock",
+  "grain-bill": {
+    "2-row": "1 lbs",
+    "Munich Malt": "11.5 lbs",
+    "Briess Caramel Malt 120L": "1.25 lbs",
+    "Chocolate Malt": "0.25 lbs"
+  },
+  "hopping": {
+    "60 min": { 
+      "Centennial": "0.25 oz"
+    },
+    "20 min": {
+      "Centennial": "0.5 oz"
+    }
+  },
+  "yeast": {
+      "Wild Harvest and Isolation Promotion": "300 billion cells"
+  },
+  "mash": {
+      "duration": "60 mins",
+      "temp start": "157",
+      "temp final": "154"
+  },
+  "gravities": {
+      "pre-boil": "",
+      "OG": "1.066",
+      "FG": "",
+      "ABV": ""
+  }
+}
