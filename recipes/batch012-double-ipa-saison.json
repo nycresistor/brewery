@@ -8,29 +8,50 @@
   },
   "hopping": {
     "90 mins":{
-        "Warrior": "2 oz",
-        "Chinook": "2 oz"
+        "Warrior": {
+            "weight": "2 oz",
+            "AA%": "18.9"
+        },
+        "Chinook": {
+            "weight": "2 oz",
+            "AA%": "13.1"
+        }
     },
     "60 mins":{
-        "Hallertau": "2 oz"
+        "Hallertau": {
+            "weight": "2 oz",
+            "AA%": "4.8"
+        }
     },
     "45 mins":{
-        "Simcoe": "1 oz"
+        "Simcoe": {
+            "weight": "1 oz",
+            "AA%": "12.7"
+        }
     },
     "30 mins":{
-        "Centennial": "1 oz"
+        "Centennial": {
+            "weight": "1 oz",
+            "AA%": "9.5"
+        }
     },
     "1 mins":{
-        "Columbus": "3 oz",
-        "Saaz": "1.0 oz"
+        "Columbus": {
+            "weight": "3 oz",
+            "AA%": "16"
+        },
+        "Saaz": {
+            "weight": "1.0 oz",
+            "AA%": "2.4"
+        }
     }
   },
   "yeast": "3x Wyeast 3711 French Saison",
-  "mash time": "60 mins",
+  "mash time": "75 mins",
   "mash init": "148",
-  "mash final": "",
+  "mash final": "145",
   "gravities": {
-      "pre-boil": "",
+      "pre-boil": "1.025",
       "OG": "",
       "FG": "",
       "ABV": ""
