@@ -1,0 +1,65 @@
+{
+    "batch-id": 13,
+    "partigyle": "TRUE",
+    "batch-name": {
+        "batch one": "The Ghost stout of Michael Gillans",
+        "batch two": "Headless Brewer's Porter"
+    },
+    "grain-bill": {
+        "Maris-Otter": "16.2 lbs",
+        "2 Row": "5 lbs",
+        "Black Patent": "2.1 lbs",
+        "Brown Malt": "2.1 lbs",
+        "Flaked Wheat": "1.6 lbs"
+    },
+    "mash additions": {
+        "first mash": {
+        },
+        "second mash": {
+            "5 oz": "100% pure pumpkin puree",
+            "1 lb": "Guarana seed"
+        }
+    },
+    "boil schedule": {
+        "first mash": {
+            "60 min": {
+                "2 oz": "East Kent Goldings"
+            },
+            "15 min": {
+                "2 oz": "East Kent Goldings"
+            },
+            "5 min": {
+                "4 oz": "cocoa nibs",
+                "2 oz": "sweet orange peels"
+            }
+        },
+        "second mash": {
+            "60 min": {
+                "1.5 oz": "Fuggles"
+            },
+            "7 min": {
+                "1 stick": "vanilla",
+                "1 stick": "cinnamon",
+                "1 whole": "nutmeg",
+                "5": "dry ginger pieces"
+            },
+            "5 min": {
+                "0.5 oz": "Fuggles"
+            }
+        }
+    },
+    "yeast": {
+        "batch one": "3x 1028 wyeast london ale",
+        "batch two": "1x 1084 wyeast irish ale"
+    },
+    "gravities": {
+        "pre-boil-1": "1.048",
+        "pre-boil-2": "1.028",
+        "OG-1": "1.076",
+        "OG-2": "1.050",
+        "FG-1": "",
+        "FG-2": "",
+        "ABV-1": "",
+        "ABV-2": ""
+    }
+}
