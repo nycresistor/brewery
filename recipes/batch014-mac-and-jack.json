@@ -10,7 +10,7 @@
     "60 mins":{
         "Centennial": {
             "weight": "1 oz",
-            "AA%": ""
+            "AA%": "9.5"
         }
     },
     "30 mins":{
@@ -21,7 +21,7 @@
     "2 mins":{
         "Cascade": {
             "weight": "1 oz",
-            "AA%": ""
+            "AA%": "5.9"
         }
     }
   },
@@ -30,8 +30,8 @@
   "mash init": "155",
   "mash final": "",
   "gravities": {
-      "pre-boil": "1.025",
-      "OG": "",
+      "pre-boil": "1.021",
+      "OG": "1.040",
       "FG": "",
       "ABV": ""
   }
