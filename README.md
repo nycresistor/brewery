@@ -19,3 +19,18 @@ Batch Ingredients are stored in JSON
 Verify JSON Recipes with
     bash$ jsonlint -sv batch-id-name.json
 
+/brew
+-----
+
+Brewing Utilities Library for python
+
+/brew-api
+---------
+
+RESTful API for tracking brewing related activities
+
+/arcana
+-------
+
+Random bizarre brewing related data that I feel needs preservation
+through the wrath of git.
