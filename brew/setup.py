@@ -17,3 +17,4 @@ setup(name="brew",
       packages = ['brew'],
       license = "LICENSE",
       install_requires=reqs
+      )

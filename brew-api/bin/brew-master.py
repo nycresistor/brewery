@@ -15,8 +15,6 @@ from wsgiref.simple_server import make_server
 
 # parse command line arguments
 parser = argparse.ArgumentParser()
-parser.add_argument('-f', '--statuspath', help='path to dpkg status file', 
-                    default='/var/lib/dpkg/status')
 parser.add_argument('-p', '--wsgiport', help='port of wsgi server', default='8080')
 parser.add_argument('-d', '--debug', action="count",
                     help='turn on debugging output')
