@@ -35,7 +35,30 @@ def mysql_init():
         cur.execute("DROP TABLE IF EXISTS grainbills")
         cur.execute("CREATE TABLE grainbills(grainbill-id INT PRIMARY KEY AUTO_INCREMENT, \
                      grainbill-name VARCHAR(25))")
-#        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Hammerish')")
+
+        # Initialize grains table
+        cur.execute("DROP TABLE IF EXISTS grains")
+        cur.exectue("CREATE TABLE grains(grain-id INT PRIMARY KEY AUTO_INCREMENT, \
+                     grain-name VARCHAR(25), \
+                     region-id INT, \
+                     grain-malter VARCHAR(25), \
+                     grain-color VARCHAR(25))")
+
+        # Initialize hops table
+        cur.execute("DROP TABLE IF EXISTS hops")
+        cur.execute("CREATE TABLE hops(hop-id INT PRIMARY KEY AUTO_INCREMENT, \
+                     hop-name VARCHAR(25), \
+                     hop-aa INT, \
+                     region-id INT)")
+
+        # Initialize yeast table
+        cur.execute("DROP TABLE IF EXISTS yeasts")
+        cur.execute("CREATE TABLE yeasts(yeast-id INT PRIMARY KEY AUTO_INCREMENT, \
+                     yeast-name VARCHAR(25), \
+                     yeast-manufacturer VARCHAR(25))")
+
+
+        #        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Hammerish')")
 #        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Bomber')")
 
 def mysql_version():
