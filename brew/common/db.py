@@ -57,9 +57,7 @@ def mysql_init():
                      yeast-name VARCHAR(25), \
                      yeast-manufacturer VARCHAR(25))")
 
-
         #        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Hammerish')")
-#        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Bomber')")
 
 def mysql_version():
 
