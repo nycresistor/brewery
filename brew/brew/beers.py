@@ -1,6 +1,9 @@
-#!/usr/bin/env python
+#/usr/bin/env python
+from common import db
 
 def create_brew():
+    db.mysql_version();
+    db.mysql_init();
     return 0
 
 def destroy_brew():

@@ -1,7 +1,9 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 
+import _mysql
 import json
+import MySQLdb as mdb
 import os
 import re
 import sqlite3
@@ -9,10 +11,42 @@ import sys
 import time
 import traceback
 
-from dpkg import parse
-from dpkg import poll
+def mysql_init():
+    con = mdb.connect('localhost', 'brew', 'brew', 'brew');
 
-def db_init(status_file):
+    with con:
+    
+        cur = con.cursor()
+        cur.execute("DROP TABLE IF EXISTS recipes")
+        cur.execute("CREATE TABLE recipes(Id INT PRIMARY KEY AUTO_INCREMENT, \
+                 Name VARCHAR(25))")
+        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Hammerish')")
+        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Bomber')")
+        cur.execute("INSERT INTO recipes(Name) VALUES('Anthony Janszoon Van Salle Porter')")
+        cur.execute("INSERT INTO recipes(Name) VALUES('Beer 2')")       
+
+def mysql_version():
+
+    try:
+        con = _mysql.connect('localhost', 'brew', 'brew', 'brew')
+                
+        con.query("SELECT VERSION()")
+        result = con.use_result()
+                            
+        print "MySQL version: %s" % \
+        result.fetch_row()[0]
+                                                    
+    except _mysql.Error, e:
+      
+        print "Error %d: %s" % (e.args[0], e.args[1])
+        sys.exit(1)
+
+    finally:
+        
+        if con:
+            con.close()
+
+def sqlite_init(status_file):
     # poll status file
     status_obj = poll.poll(status_file)
     
@@ -29,11 +63,11 @@ def db_init(status_file):
     # return ready database handle
     return conn
 
-def db_query(conn, query):
+def sqlite_query(conn, query):
     db_resp = conn.execute(query).fetchall()
     return db_resp
 
-def db_create(conn):
+def sqlite_create(conn):
     c = conn.cursor()
 
     c.execute('PRAGMA temp_store=MEMORY;')

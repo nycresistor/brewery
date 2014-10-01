@@ -14,7 +14,7 @@ setup(name="brew",
       author="matt@nycresistor.com",
       author_email="matt@nycresistor.com",
       url="https://github.com/nycresistor/brewery",
-      packages = ['brew'],
+      packages = ['brew', 'common'],
       license = "LICENSE",
       install_requires=reqs
       )
