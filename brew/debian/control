@@ -13,4 +13,4 @@ Section: misc
 Priority: extra
 Depends: python, python3, python-support
 Homepage: http://brewery.nycresistor.com/
-Description: NYC Resistor Brewery API
+Description: NYC Resistor Brewing Toolkit
