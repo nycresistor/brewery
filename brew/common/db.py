@@ -6,24 +6,37 @@ import json
 import MySQLdb as mdb
 import os
 import re
-import sqlite3
 import sys
 import time
 import traceback
+
+def mysql_conn():
+    print "this needs to be where we actually grab mysql configs and connect / test connection"
 
 def mysql_init():
     con = mdb.connect('localhost', 'brew', 'brew', 'brew');
 
     with con:
-    
+        # grab connection reference
         cur = con.cursor()
+        # initialize recipe table
         cur.execute("DROP TABLE IF EXISTS recipes")
-        cur.execute("CREATE TABLE recipes(Id INT PRIMARY KEY AUTO_INCREMENT, \
-                 Name VARCHAR(25))")
-        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Hammerish')")
-        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Bomber')")
-        cur.execute("INSERT INTO recipes(Name) VALUES('Anthony Janszoon Van Salle Porter')")
-        cur.execute("INSERT INTO recipes(Name) VALUES('Beer 2')")       
+        cur.execute("CREATE TABLE recipes(batch-id INT PRIMARY KEY AUTO_INCREMENT, \
+                     batch-name VARCHAR(25), \
+                     grainbill-id INT, \
+                     hopsch-id INT, \
+                     dryhopsch-id INT, \
+                     yeast-id INT, \
+                     mash-id INT, \
+                     gravity-id INT, \
+                     refiner-id INT)")
+
+        # Initialize grainbills table
+        cur.execute("DROP TABLE IF EXISTS grainbills")
+        cur.execute("CREATE TABLE grainbills(grainbill-id INT PRIMARY KEY AUTO_INCREMENT, \
+                     grainbill-name VARCHAR(25))")
+#        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Hammerish')")
+#        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Bomber')")
 
 def mysql_version():
 
@@ -46,68 +59,3 @@ def mysql_version():
         if con:
             con.close()
 
-def sqlite_init(status_file):
-    # poll status file
-    status_obj = poll.poll(status_file)
-    
-    # initialize sqlite3
-    conn = sqlite3.connect(":memory:")
-    db_create(conn)
-
-    # parse status fileobject, load into database
-    db_status_load(conn, status_obj)
-
-    # kill that big string obj
-    del status_obj
-
-    # return ready database handle
-    return conn
-
-def sqlite_query(conn, query):
-    db_resp = conn.execute(query).fetchall()
-    return db_resp
-
-def sqlite_create(conn):
-    c = conn.cursor()
-
-    c.execute('PRAGMA temp_store=MEMORY;')
-    c.execute('PRAGMA journal_mode=MEMORY;')
-
-    # tables, and a dependency index 
-    c.execute('create table if not exists brews (brewid integer primary key autoincrement, brewname text, brewdesc blob);')
-    c.execute('create table if not exists brewers (brewerid int, brewername text);')
-    c.execute('create table if not exists kegs (kegid int, kegsize int, kegtype int);')
-    c.execute('create table if not exists kegtypes (ktypeid int, ktypename text);')
-    c.execute('create table if not exists carboys(carboyid int, carboysize int, carboytype int);')
-    c.execute('create table if not exists carboytypes(carboytypeid, carboytypename text);')
-    c.execute('create table if not exists grains (grainid int, grainname text);')
-    c.execute('create table if not exists hops (hopsid int, hopsname text);')
-    c.execute('create table if not exists refiners (refinerid int, refinername text);')
-    c.execute('create table if not exists additives (additiveid int, additivename text);')
-    conn.commit()
-
-    return 0
-
-def db_add_kegtype(conn, kegtypename):
-    return 0
-
-def db_add_carboytype(conn, carboytypename):
-    return 0
-
-def db_add_brew(conn, brewname, brewdesc, recipe):
-    return 0
-
-def db_add_brewer(conn, brewername):
-    return 0
-
-def db_add_grain(conn, grainname):
-    return 0
-
-def db_add_hops(conn, hopsname):
-    return 0
-
-def db_add_refiner(conn, refinername):
-    return 0
-
-def db_add_additive(conn, additivename):
-    return 0
