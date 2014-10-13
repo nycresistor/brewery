@@ -1,0 +1,52 @@
+{
+  "batch-id": 15,
+  "batch-name": "Thanksgiving IPA",
+  "grain-bill": {
+    "Briess 2-Row": "17 lbs",
+    "Briess Caramel Malt 40L": "1.5 lbs",
+    "Briess White Wheat Malt": "1.5 lbs"
+  },
+  "hopping": {
+    "90 mins": {
+      "Warrior": "2 oz", # 15.7%
+      "Chinook": "2 oz"  # 13.1%
+    },
+    "45 mins": {
+      "Simcoe": "1 oz"   # 12.3%
+    },
+    "30 mins": {
+      "Columbus": "1 oz" # 15.2%
+    },
+    "10 mins": {
+      "irish moss": "1 teaspoon",
+      "yeast strengthener": "1/2 teaspoon"
+    },
+    "5 mins": {
+      "dried sweet orange peels": "LEFTOVER BAG"
+    },
+    "1 min": {
+      "Armarillo": "2.25 oz" # 8.8%
+    }
+  },
+  "dry-hopping": {
+    "7 Days": {
+      "Centennial": "1 oz", # 
+      "Columbus": "1 oz",   # 15.2%
+      "Simcoe": "1 oz"      # 12.3%
+    }
+  },
+  "yeast": {
+    "1056 wyeast": "200 billion cells"
+  },
+  "mash": {
+    "duration": "60 mins",
+    "start temp": "151 F",
+    "final temp": "149 F"
+  },
+  "gravities": {
+      "pre-boil": "1.042",
+      "OG": "",
+      "FG": "",
+      "ABV": ""
+  }
+}
