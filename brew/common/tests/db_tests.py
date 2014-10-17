@@ -28,7 +28,8 @@ def InitDB():
 class InitDBTests(unittest.TestCase):
 
     def testcreate(self):
-        self.assertIsNone(db.mysql_init())
+        con = db.mysql_conn()
+        self.assertIsNone(db.mysql_init(con))
 
 #    def testinsert(self):
 #        self.failUnless(db.mysql_insert(arg))

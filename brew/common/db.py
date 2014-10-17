@@ -11,10 +11,10 @@ import time
 import traceback
 
 def mysql_conn():
-    print "this needs to be where we actually grab mysql configs and connect / test connection"
-
-def mysql_init():
     con = mdb.connect('localhost', 'brew', 'brew', 'brew');
+    return con
+
+def mysql_init(con):
 
     with con:
         # grab connection reference
@@ -59,6 +59,22 @@ def mysql_init():
                      yeast_manufacturer VARCHAR(25))")
 
         #        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Hammerish')")
+
+def mysql_insert(con, exprsn):
+    with con:
+        # grab connection reference
+        cur = con.cursor()
+        # initialize recipe table
+        cur.execute(exprsn)
+
+def mysql_create(con, tschema):
+    with con:
+        cur = con.cursor()
+
+def mysql_drop(con, table_name):
+    with con:
+        cur = con.cursor()
+        cur.execute("DROP TABLE IF EXISTS %s" % table_name)
 
 def mysql_version():
 
