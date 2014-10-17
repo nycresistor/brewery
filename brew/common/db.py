@@ -42,7 +42,8 @@ def mysql_init():
                      grain-name VARCHAR(25), \
                      region-id INT, \
                      grain-malter VARCHAR(25), \
-                     grain-color VARCHAR(25))")
+                     grain-color VARCHAR(25), \
+                     grain-region VARCHAR(25))")
 
         # Initialize hops table
         cur.execute("DROP TABLE IF EXISTS hops")
