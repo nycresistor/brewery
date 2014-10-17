@@ -11,7 +11,10 @@ Database toolkit tests
    db method set.
 """
 
+import sys
 import unittest
+
+sys.path.append('../../')
 
 
 from common import db

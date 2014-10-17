@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# -*- coding: utf-8 -*-
+# _*_ coding: utf_8 _*_
 
 import _mysql
 import json
@@ -21,42 +21,42 @@ def mysql_init():
         cur = con.cursor()
         # initialize recipe table
         cur.execute("DROP TABLE IF EXISTS recipes")
-        cur.execute("CREATE TABLE recipes(batch-id INT PRIMARY KEY AUTO_INCREMENT, \
-                     batch-name VARCHAR(25), \
-                     grainbill-id INT, \
-                     hopsch-id INT, \
-                     dryhopsch-id INT, \
-                     yeast-id INT, \
-                     mash-id INT, \
-                     gravity-id INT, \
-                     refiner-id INT)")
+        cur.execute("CREATE TABLE recipes(batch_id INT PRIMARY KEY AUTO_INCREMENT, \
+                     batch_name VARCHAR(25), \
+                     grainbill_id INT, \
+                     hopsch_id INT, \
+                     dryhopsch_id INT, \
+                     yeast_id INT, \
+                     mash_id INT, \
+                     gravity_id INT, \
+                     refiner_id INT)")
 
         # Initialize grainbills table
         cur.execute("DROP TABLE IF EXISTS grainbills")
-        cur.execute("CREATE TABLE grainbills(grainbill-id INT PRIMARY KEY AUTO_INCREMENT, \
-                     grainbill-name VARCHAR(25))")
+        cur.execute("CREATE TABLE grainbills(grainbill_id INT PRIMARY KEY AUTO_INCREMENT, \
+                     grainbill_name VARCHAR(25))")
 
         # Initialize grains table
         cur.execute("DROP TABLE IF EXISTS grains")
-        cur.exectue("CREATE TABLE grains(grain-id INT PRIMARY KEY AUTO_INCREMENT, \
-                     grain-name VARCHAR(25), \
-                     region-id INT, \
-                     grain-malter VARCHAR(25), \
-                     grain-color VARCHAR(25), \
-                     grain-region VARCHAR(25))")
+        cur.execute("CREATE TABLE grains(grain_id INT PRIMARY KEY AUTO_INCREMENT, \
+                     grain_name VARCHAR(25), \
+                     region_id INT, \
+                     grain_malter VARCHAR(25), \
+                     grain_color VARCHAR(25), \
+                     grain_region VARCHAR(25))")
 
         # Initialize hops table
         cur.execute("DROP TABLE IF EXISTS hops")
-        cur.execute("CREATE TABLE hops(hop-id INT PRIMARY KEY AUTO_INCREMENT, \
-                     hop-name VARCHAR(25), \
-                     hop-aa INT, \
-                     region-id INT)")
+        cur.execute("CREATE TABLE hops(hop_id INT PRIMARY KEY AUTO_INCREMENT, \
+                     hop_name VARCHAR(25), \
+                     hop_aa INT, \
+                     region_id INT)")
 
         # Initialize yeast table
         cur.execute("DROP TABLE IF EXISTS yeasts")
-        cur.execute("CREATE TABLE yeasts(yeast-id INT PRIMARY KEY AUTO_INCREMENT, \
-                     yeast-name VARCHAR(25), \
-                     yeast-manufacturer VARCHAR(25))")
+        cur.execute("CREATE TABLE yeasts(yeast_id INT PRIMARY KEY AUTO_INCREMENT, \
+                     yeast_name VARCHAR(25), \
+                     yeast_manufacturer VARCHAR(25))")
 
         #        cur.execute("INSERT INTO recipes(Name) VALUES('Hop Hammerish')")
 
@@ -80,4 +80,5 @@ def mysql_version():
         
         if con:
             con.close()
+
 
