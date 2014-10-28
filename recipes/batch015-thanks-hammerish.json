@@ -30,8 +30,9 @@
   },
   "dry-hopping": {
     "7 Days": {
-      "Centennial": "1 oz", # 
+      "Centennial": "1 oz", # 9.5%
       "Columbus": "1 oz",   # 15.2%
+      "Cascade": "1 oz",    # 5.9%
       "Simcoe": "1 oz"      # 12.3%
     }
   },
