@@ -1,5 +1,10 @@
 #!/usr/bin/env python  
-      
+ 
+"""
+1951 Leonard Refrigerator Daemon
+  -- target platform Intel Edison
+"""
+
 import mraa  
 import time  
 import sys

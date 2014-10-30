@@ -1,0 +1,11 @@
+[Unit]
+Description="1951 Leonard Refrigerator Daemon"
+After=network.target
+
+[Service]
+Environment="HOME=/home/root"
+#User=root
+ExecStart=/home/root/leonard.py
+Restart=always
+RestartSec=10s
+
