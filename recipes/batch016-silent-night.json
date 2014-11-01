@@ -1,0 +1,60 @@
+{
+  "batch-id": 16,
+  "batch-name": "Silent Night",
+  "grain-bill": {
+    "Maris Otter": "12.1 lbs",
+    "Aromatic": "0.25 lbs",
+    "Biscuit Malt": "0.25 lbs",
+    "Black Patent": "1 lbs",
+    "Brown Malt": "1 lbs",
+    "Flaked Wheat" : "1.5 lbs",
+    "Briess Cherry Wood Smoked Malt":  "0.5 lbs"
+  },
+  "hopping": {
+    "60 mins":{
+        "Eastern Kent Goldings": {
+            "weight": "1.5 oz",
+            "AA%": "9.5"
+        }
+    },
+    "15 mins":{
+        "Eastern Kent Goldings": {
+            "weight": "0.5 oz",
+            "AA%": "9.5"
+        },
+        "Fuggles": {
+            "weight": "0.25 oz",
+            "AA%": "9.5"
+        }
+    },
+    "5 mins":{
+        "Fuggles": {
+            "weight": "0.75 oz",
+            "AA%": "5.9"
+        }
+    },
+    "flame out": {
+        "Cinnamon": { 
+            "weight": "1 stick"
+        },
+        "Nutmeg": {
+            "weight": "1 seed"
+        },
+        "Vanilla": {
+            "weight": "1 bean"
+        }
+  },
+  "yeast": {
+      "Wyeast 1084 Irish Ale": "1 wetpack",
+      "Wyeast 1728 Scottish Ale": "1 wetpack"
+  },
+  "mash time": "60 mins",
+  "mash init": "154",
+  "mash final": "",
+  "gravities": {
+      "pre-boil": "",
+      "OG": "",
+      "FG": "",
+      "ABV": ""
+  }
+}
