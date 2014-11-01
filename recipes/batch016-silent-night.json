@@ -52,7 +52,7 @@
   "mash init": "154",
   "mash final": "",
   "gravities": {
-      "pre-boil": "",
+      "pre-boil": "1.032",
       "OG": "",
       "FG": "",
       "ABV": ""
