@@ -14,23 +14,23 @@
     "60 mins":{
         "Eastern Kent Goldings": {
             "weight": "1.5 oz",
-            "AA%": "9.5"
+            "AA%": "5.7"
         }
     },
     "15 mins":{
         "Eastern Kent Goldings": {
             "weight": "0.5 oz",
-            "AA%": "9.5"
+            "AA%": "5.7"
         },
         "Fuggles": {
             "weight": "0.25 oz",
-            "AA%": "9.5"
+            "AA%": "5.3"
         }
     },
     "5 mins":{
         "Fuggles": {
             "weight": "0.75 oz",
-            "AA%": "5.9"
+            "AA%": "5.3"
         }
     },
     "flame out": {
