@@ -11,8 +11,8 @@
 
 import getopt
 import mraa
-import time
 import sys
+import time
 
 __version__ = "0.1"
 app_name = "Leonard Daemon"
