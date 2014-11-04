@@ -29,6 +29,11 @@ Brewing Utilities Library for python
 
 RESTful API for tracking brewing related activities
 
+/leonard
+--------
+
+Code for intel edison that runs the Leonard Refrigerator.
+
 /arcana
 -------
 
