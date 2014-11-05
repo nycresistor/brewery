@@ -8,14 +8,26 @@
   },
   "hopping": {
     "90 mins": {
-      "Warrior": "2 oz", # 15.7%
-      "Chinook": "2 oz"  # 13.1%
+      "Warrior": {
+        "weight": "2 oz", 
+        "AA%": "15.7%"
+      },
+      "Chinook": {
+        "weight": "2 oz",
+        "AA%": "13.1%"
+      }
     },
     "45 mins": {
-      "Simcoe": "1 oz"   # 12.3%
+      "Simcoe": {
+        "weight": "1 oz",
+        "AA%": "12.3%"
+      }
     },
     "30 mins": {
-      "Columbus": "1 oz" # 15.2%
+      "Columbus": { 
+        "weight": "1 oz",
+        "AA%": "15.2%"
+      }
     },
     "10 mins": {
       "irish moss": "1 teaspoon",
@@ -25,15 +37,30 @@
       "dried sweet orange peels": "LEFTOVER BAG"
     },
     "1 min": {
-      "Armarillo": "2.25 oz" # 8.8%
+      "Armarillo": {
+        "weight": "2.25 oz",
+        "AA%" : "8.8%"
+      }
     }
   },
   "dry-hopping": {
     "7 Days": {
-      "Centennial": "1 oz", # 9.5%
-      "Columbus": "1 oz",   # 15.2%
-      "Cascade": "1 oz",    # 5.9%
-      "Simcoe": "1 oz"      # 12.3%
+      "Centennial": {
+        "weight": "1 oz", 
+        "AA%": "9.5%"
+      },
+      "Columbus": {
+        "weight": "1 oz", 
+        "AA%": "15.2%"
+      },
+      "Cascade": {
+        "weight": "1 oz",
+        "AA%": "5.9%"
+      },
+      "Simcoe": {
+        "weight": "1 oz",
+        "AA%": "12.3%"
+      }
     }
   },
   "yeast": {
