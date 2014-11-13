@@ -14,6 +14,8 @@ import mraa
 import sys
 import time
 
+from math import log
+
 def get_temp(aid):
     y = mraa.Aio(aid)
     t = y.read()
