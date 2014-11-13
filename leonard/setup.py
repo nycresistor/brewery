@@ -14,6 +14,7 @@ setup(name="leonard",
       author="matt@nycresistor.com",
       author_email="matt@nycresistor.com",
       url="https://github.com/nycresistor/brewery/leonard",
+      scripts=['bin/leonard'],
       packages = ['leonard'],
       license = "LICENSE",
       install_requires=reqs
