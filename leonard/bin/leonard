@@ -39,7 +39,7 @@ def main():
     tempformat = None
     verbose = False
 
-    for o, a in opts:
+    for o, a, t in opts:
         if o == "-v":
             verbose = True
             print "%s - %s" % (app_name, __version__)
