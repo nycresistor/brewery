@@ -15,6 +15,9 @@ setup(name="leonard",
       author_email="matt@nycresistor.com",
       url="https://github.com/nycresistor/brewery/leonard",
       scripts=['bin/leonard'],
+      data_files=[
+          ('/lib/systemd/system/leonard.service', ['bin/leonard.service'])
+      ],
       packages = ['leonard'],
       license = "LICENSE",
       install_requires=reqs
