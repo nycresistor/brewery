@@ -57,6 +57,7 @@ def main():
         usage()
         sys.exit(2)
     output = None
+    tempformat = None
     verbose = False
 
     for o, a in opts:
