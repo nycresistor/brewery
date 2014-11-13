@@ -1,15 +1,9 @@
 #!/usr/bin/env python  
  
 """
-1951 Leonard Refrigerator Daemon
-  -- target platform Intel Edison
-  -- temp sensor    a0
-  -- switch         d4
-  -- relay          d2
-  -- rtd            spi
+Thermistor Sensor Methods
 """
 
-import getopt
 import mraa
 import sys
 import time

@@ -1,12 +1,8 @@
 #!/usr/bin/env python  
  
 """
-1951 Leonard Refrigerator Daemon
-  -- target platform Intel Edison
-  -- temp sensor    a0
-  -- switch         d4
-  -- relay          d2
-  -- rtd            spi
+HardWare User eXperience
+   how pushing all zee buttons does all zee things
 """
 
 import getopt

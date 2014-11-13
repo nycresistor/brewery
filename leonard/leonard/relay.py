@@ -1,12 +1,7 @@
 #!/usr/bin/env python  
  
 """
-1951 Leonard Refrigerator Daemon
-  -- target platform Intel Edison
-  -- temp sensor    a0
-  -- switch         d4
-  -- relay          d2
-  -- rtd            spi
+   Relay Firing Methods
 """
 
 import mraa
