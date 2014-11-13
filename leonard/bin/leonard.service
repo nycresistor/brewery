@@ -5,7 +5,7 @@ After=network.target
 [Service]
 Environment="HOME=/home/root"
 #User=root
-ExecStart=/home/root/leonard.py
+ExecStart=/usr/bin/leonard
 Restart=always
 RestartSec=10s
 
