@@ -39,14 +39,14 @@ def main():
     tempformat = None
     verbose = False
 
-    for o, a, t in opts:
+    for o, a in opts:
         if o == "-v":
             verbose = True
             print "%s - %s" % (app_name, __version__)
         elif o in ("-h", "--help"):
             usage()
             sys.exit()
-        elif t in ("-t", "--temp"):
+        elif o in ("-t", "--temp"):
             tempformat = a
         else:
             assert False, "unhandled option"
