@@ -21,3 +21,6 @@ temp control {
 
 
 
+to pre-empt systemd on uboot with edison:
+
+setenv bootargs_debug $bootargs_debug init=/bin/sh
