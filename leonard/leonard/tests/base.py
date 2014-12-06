@@ -2,6 +2,8 @@
 # -*- coding: utf-8 -*-
 
 """
+probably worth unit testing functions that
+fuck with mechanical relays and the sort.
 """
 
 import sys
