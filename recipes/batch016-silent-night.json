@@ -45,6 +45,12 @@
         }
     }
   },
+  "dryhopping":{
+      "American Dark Oak Chips": {
+          "weight": "1 small sock",
+	  "sterilized": "1 glass 12 year Arberlour Single Malt Scotch ( speyside 12 year )"
+      }
+  },
   "yeast": {
       "Wyeast 1084 Irish Ale": "1 wetpack",
       "Wyeast 1728 Scottish Ale": "1 wetpack"
