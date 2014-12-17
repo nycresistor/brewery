@@ -1,7 +1,7 @@
 #!/usr/bin/env python  
  
 """
-HardWare User eXperience
+Hard Ware User eXperience
    how pushing all zee buttons does all zee things
 """
 
