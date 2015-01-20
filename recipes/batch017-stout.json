@@ -1,0 +1,56 @@
+{
+  "batch-id": 17,
+  "batch-name": "Cafezinho Preto",
+  "grain-bill": {
+    "Maris Otter": "12.1 lbs",
+    "Black Patent": "1 lbs",
+    "Brown Malt": "1 lbs",
+    "Flaked Wheat" : "1.5 lbs",
+    "Flaked Oat": "0.6 lbs",
+    "Cara Crystal 20": "0.6 lbs"
+  },
+  "hopping": {
+    "60 mins":{
+        "Eastern Kent Goldings": {
+            "weight": "1.5 oz",
+            "AA%": "5.7"
+        },
+        "Magnum": {
+            "weight": ".35 oz",
+            "AA%": "0.0"
+        }
+    },
+    "10 mins":{
+        "Eastern Kent Goldings": {
+            "weight": "0.5 oz",
+            "AA%": "5.7"
+        },
+        "Lactose": {
+            "weight": "1 lb"
+        }
+    },
+    "flame out": {
+        "Cinnamon": { 
+            "weight": "1 stick"
+        },
+        "Nutmeg": {
+            "weight": "1 seed"
+        },
+        "Vanilla": {
+            "weight": "1 bean"
+        }
+    }
+  },
+  "yeast": {
+      "Wyeast 1056 American Ale": "2 wetpack"
+  },
+  "mash time": "60 mins",
+  "mash init": "148",
+  "mash final": "145",
+  "gravities": {
+      "pre-boil": "1.036",
+      "OG": "1.060",
+      "FG": "",
+      "ABV": ""
+  }
+}
