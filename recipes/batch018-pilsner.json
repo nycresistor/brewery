@@ -1,0 +1,49 @@
+{
+  "batch-id": 18,
+  "batch-name": "Pils",
+  "grain-bill": {
+    "Pilsner 2-row": "17 lbs",
+    "Carapils": "1.2 lbs",
+    "Special B": "1 lbs"
+  },
+  "hopping": {
+    "75 mins":{
+        "Sterling": {
+            "weight": "1.75 oz",
+            "AA%": "8.7"
+        }
+    },
+    "30 mins":{
+        "Sterling": {
+            "weight": "1.75 oz",
+            "AA%": "8.7"
+        }
+    },
+    "15 mins":{
+        "Sterling": {
+            "weight": "1.75 oz",
+            "AA%": "8.7"
+        },
+        "Whirlifloc": {
+            "weight": "1 tablet"
+        }
+    },
+    "10 mins": {
+        "servomices" {
+            "weight": "1 capsule"
+        }
+    }
+  },
+  "yeast": {
+      "Wyeast 2124 Bohemian Lager": "2 wetpack"
+  },
+  "mash time": "60 mins",
+  "mash init": "155",
+  "mash final": "153",
+  "gravities": {
+      "pre-boil": "1.046",
+      "OG": "1.064",
+      "FG": "",
+      "ABV": ""
+  }
+}
