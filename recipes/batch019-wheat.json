@@ -1,0 +1,52 @@
+{
+  "batch-id": 19,
+  "batch-name": "Wheat",
+  "grain-bill": {
+    "Wheat": "12 lbs",
+    "2 Row": "7 lbs",
+    "German Pilsner": "3 lbs"
+  },
+  "hopping": {
+    "60 mins":{
+        "Centennial": {
+            "weight": "1.0 oz",
+            "AA%": "9.0",
+            "BA": "3.3"
+        }
+    },
+    "30 mins":{
+        "Hallertau": {
+            "weight": "1.0 oz",
+            "AA%": "2.7",
+            "BA%": "3.8"
+        }
+    },
+    "15 mins":{
+        "Irish Moss": {
+            "weight": "1 tablet"
+        }
+    },
+    "10 mins": {
+        "servomices": {
+            "weight": "1 capsule"
+        }
+    },
+    "3 mins": {
+        "rhubarb": {
+            "weight":  "2 stalks"
+        }
+    }
+  },
+  "yeast": {
+      "Wyeast 2124 Bohemian Lager": "2 wetpack"
+  },
+  "mash time": "60 mins",
+  "mash init": "152",
+  "mash final": "150",
+  "gravities": {
+      "pre-boil": "1.050",
+      "OG": "",
+      "FG": "",
+      "ABV": ""
+  }
+}
