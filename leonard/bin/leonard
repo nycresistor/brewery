@@ -17,6 +17,7 @@ import time
 from leonard import hwux
 from leonard import relay
 from leonard import thermistor
+from leonard import display
 
 __version__ = "0.1"
 app_name = "Leonard Daemon"
@@ -53,7 +54,7 @@ def main():
     if (tempformat):
         try:
             ftemp = thermistor.get_temp(0)
-            print ftemp
+            display.plcd(ftemp)
         except getopt.GetoptError, err:
             print str(err)
             sys.exit(2)
