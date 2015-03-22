@@ -1,0 +1,38 @@
+{
+  "batch-id": 20,
+  "batch-name": "Mac and Jack's African Amber",
+  "grain-bill": {
+    "Maris Otter": "14 lbs",
+    "Crystal Malt 80": "0.75 lbs",
+    "Caramunich 45": "1.25 lbs"
+  },
+  "hopping": {
+    "60 mins":{
+        "Horizon": {
+            "weight": "1 oz",
+            "AA%": "10.1"
+        }
+    },
+    "30 mins":{
+        "Dried Sweet Orange Peels": {
+            "weight": "0.75 oz"
+        }
+    },
+    "2 mins":{
+        "Cascade": {
+            "weight": "1 oz",
+            "AA%": "7.2"
+        }
+    }
+  },
+  "yeast": "2x Wyeast 1098 British Ale",
+  "mash time": "60 mins",
+  "mash init": "155",
+  "mash final": "",
+  "gravities": {
+      "pre-boil": "1.032",
+      "OG": "",
+      "FG": "",
+      "ABV": ""
+  }
+}
