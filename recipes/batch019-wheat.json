@@ -40,13 +40,16 @@
   "yeast": {
       "Wyeast 2124 Bohemian Lager": "2 wetpack"
   },
+  "secondary": {
+      "Vinters Harvest Raspberry puree": "3.1 lbs"
+  },
   "mash time": "60 mins",
   "mash init": "152",
   "mash final": "150",
   "gravities": {
       "pre-boil": "1.050",
-      "OG": "1.080",
-      "FG": "",
-      "ABV": ""
+      "OG": "1.070",
+      "FG": "1.007",
+      "ABV": "8%ish"
   }
 }
