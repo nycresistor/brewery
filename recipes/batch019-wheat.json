@@ -38,7 +38,8 @@
     }
   },
   "yeast": {
-      "Wyeast 2124 Bohemian Lager": "2 wetpack"
+      "Wyeast 3522 - Ardennes": "2 wetpack",
+      "Wyeast 1010 - American Wheat": "1 wetpack"
   },
   "secondary": {
       "Vinters Harvest Raspberry puree": "3.1 lbs"
