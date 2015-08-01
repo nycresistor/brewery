@@ -33,17 +33,18 @@
             "AA%" : "7.1"
         }
     },
-    "2 mins":{
-        "Whirlifloc": "1 tablet"
+    "5 mins":{
+        "Whirlifloc": "1 tablet",
+        "Servomices": "1 capsule"
     }
   },
   "yeast": "1x 1056 American Ale",
   "mash time": "60 mins",
   "mash strike": "166",
   "mash init": "154",
-  "mash final": "",
+  "mash final": "---",
   "gravities": {
-      "pre-boil": "",
+      "pre-boil": "1.030",
       "OG": "",
       "FG": "",
       "ABV": ""
