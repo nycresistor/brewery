@@ -1,0 +1,50 @@
+{
+  "batch-id": 21,
+  "batch-name": "Mel's IPA",
+  "grain-bill": {
+    "2 row": "12 lbs",
+    "Vienna": "1.5 lbs",
+    "Dark Munich": "1 lbs",
+    "Caramunich 40": "0.75 lbs",
+    "Vienna White Wheat": "0.5 lbs",
+    "Carapils": "0.25 lbs"
+  },
+  "hopping": {
+    "60 mins":{
+       "Comet": {
+            "weight" : "1 oz",
+            "AA%": "11.3"
+        }
+    },
+    "30 mins":{
+        "Centennial": {
+            "weight" : "1 oz",
+            "AA%" : "7.7"
+        },
+        "Cascade": {
+            "weight" : "0.5 oz",
+            "AA%" : "7.1"
+        }
+    },
+    "10 mins":{
+        "Cascade": {
+            "weight" : "0.5 oz",
+            "AA%" : "7.1"
+        }
+    },
+    "2 mins":{
+        "Whirlifloc": "1 tablet"
+    }
+  },
+  "yeast": "1x 1056 American Ale",
+  "mash time": "60 mins",
+  "mash strike": "166",
+  "mash init": "154",
+  "mash final": "",
+  "gravities": {
+      "pre-boil": "",
+      "OG": "",
+      "FG": "",
+      "ABV": ""
+  }
+}
