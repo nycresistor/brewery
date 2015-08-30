@@ -2,7 +2,7 @@
   "batch-id": 21,
   "batch-name": "The Plague Stout",
   "grain-bill": {
-    "Maris Otter": "16 lbs",
+    "Maris Otter": "12 lbs",
     "black briess": "2 lbs",
     "brown malt": "2 lbs",
     "Caramalt 23L": "0.625 lbs",
@@ -29,11 +29,11 @@
   },
   "yeast": "2x 1056 American Ale",
   "mash time": "60 mins",
-  "mash strike": "175",
-  "mash init": "158",
+  "mash strike": "172",
+  "mash init": "156",
   "mash final": "---",
   "gravities": {
-      "pre-boil": "",
+      "pre-boil": "1.028",
       "OG": "",
       "FG": "",
       "ABV": ""
