@@ -13,7 +13,6 @@ import time
 import pyupm_i2clcd as lcd
 
 
-
 __version__ = "0.1"
 app_name = "mechanical relay switch daemon"
 
