@@ -71,14 +71,25 @@ def readrtd():
                     untap_relay(2)
             
             fahrenheit = 9.0/5.0 * celsius + 32
+            
             myLcd.clear()
             myLcd.setColor(255, 255, 0)
             myLcd.setCursor(0,0)
-            temp_line = "%d C / %d F - %s" % (celsius, fahrenheit, relay_state)
+
+            if relay_state == 1:
+                relay_disp = "|"
+            elif relay_state == 0:
+                relay_disp = "O"
+            else:
+                relay_disp = "?"
+
+            temp_line = "%d C / %d F - %s" % (celsius, fahrenheit, relay_disp)
             myLcd.write(temp_line)
+            
             myLcd.setCursor(1, 0)
             ip_address = get_ip_address('wlan0')
             myLcd.write(ip_address)
+
         except:
             print "oof : %s" % celsius
     ser.close()
