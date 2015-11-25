@@ -47,3 +47,4 @@ while True:
     celsius = get_temp()
     socket.send(celsius)
 
+
