@@ -1,0 +1,49 @@
+#!/usr/bin/env python
+
+import zmq
+import sys
+import random
+
+def tap_relay(rid):
+    x = mraa.Gpio(rid)
+    x.dir(mraa.DIR_OUT)
+    x.write(1)
+    return 0
+
+def untap_relay(rid):
+    x = mraa.Gpio(rid)
+    x.dir(mraa.DIR_OUT)
+    x.write(0)
+    return 0
+
+def read_gpio(rid):
+    x = mraa.Gpio(rid)
+    value = x.read()
+    return value
+
+def get_temp():
+    client_port = "5559"
+    context = zmq.Context()
+    client_socket = context.socket(zmq.REQ)
+    client_socket.connect ("tcp://localhost:%s" % client_port)
+    client_id = random.randrange(1,10005)
+    client_socket.send ("templs %s" % client_id)
+    #  Get the reply.
+    celsius = client_socket.recv()
+    return celsius
+    # celsius = float(celsius)
+    # fahrenheit = 9.0/5.0 * celsius + 32
+
+port = "5560"
+context = zmq.Context()
+socket = context.socket(zmq.REP)
+socket.connect("tcp://localhost:%s" % port)
+server_id = random.randrange(1,10005)
+
+while True:
+    #  Wait for next request from client
+    message = socket.recv()
+    time.sleep (1)
+    celsius = get_temp()
+    socket.send(celsius)
+
