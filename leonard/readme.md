@@ -6,21 +6,15 @@ as the brains of the NYC Resistor beer fridge.
 
 The refrigerator is a 1951 Leonard.
 
-Feature Goals
--------------
+Application
+-----------
 
-temp control {
-  * rtd pt100 sensor
-  * ambient temperature thermistor
-}
+/bin/temp  -- queries for temp status from rtdd / zmqd
 
-  * multiple relays 110v 10-20amp
-  * ceramic heater ( maybe )
-  * 100 lb flex sensor
-  * 2 ( maybe 3 ) solenoid valves
+boot order :
 
-
-
-to pre-empt systemd on uboot with edison:
-
-setenv bootargs_debug $bootargs_debug init=/bin/sh
+sbin/zmqd - zeromq queue daemon
+sbin/rtdd - rtd sensor monitoring daemon
+sbin/lcdd - lcd driver daemon
+sbin/mrcd - mechanical relay control daemon
+ 
