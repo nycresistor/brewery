@@ -1,0 +1,10 @@
+[Unit]
+Description="Leonard LCD Daemon"
+After=rtdd
+
+[Service]
+Environment="HOME=/home/root"
+#User=root
+ExecStart=/usr/sbin/lcdd
+Restart=always
+RestartSec=10s

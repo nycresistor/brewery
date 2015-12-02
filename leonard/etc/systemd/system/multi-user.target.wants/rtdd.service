@@ -1,0 +1,10 @@
+[Unit]
+Description="Leonard RTD Daemon"
+After=zmqd
+
+[Service]
+Environment="HOME=/home/root"
+#User=root
+ExecStart=/usr/sbin/rtdd
+Restart=always
+RestartSec=10s

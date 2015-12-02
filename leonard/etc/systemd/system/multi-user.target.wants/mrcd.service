@@ -1,0 +1,10 @@
+[Unit]
+Description="Leonard Mechanical Relay Daemon"
+After=rtdd
+
+[Service]
+Environment="HOME=/home/root"
+#User=root
+ExecStart=/usr/sbin/mrcd
+Restart=always
+RestartSec=10s

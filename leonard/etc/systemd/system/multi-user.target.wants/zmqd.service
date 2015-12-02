@@ -1,0 +1,10 @@
+[Unit]
+Description="Leonard ZMQ Daemon"
+After=network.target
+
+[Service]
+Environment="HOME=/home/root"
+#User=root
+ExecStart=/usr/sbin/zmqd
+Restart=always
+RestartSec=10s
