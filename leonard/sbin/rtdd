@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-# matt@nycresistor.com
 
 import zmq
 import mraa
@@ -13,18 +12,27 @@ context = zmq.Context()
 socket = context.socket(zmq.REP)
 socket.connect("tcp://localhost:%s" % port)
 server_id = random.randrange(1,10005)
-ser = serial.Serial('/dev/ttyUSB0', 115200)
+# ser = serial.Serial('/dev/ttyUSB0', 115200)
 
-while True:
-    #  Wait for next request from client
+def serial_data(port, baudrate):
+    ser = serial.Serial(port, baudrate, timeout=10)
+
+    while True:
+        ser.flush()
+        ser.flushInput()
+        yield ser.readline()
+
+    ser.close()
+
+for line in serial_data('/dev/ttyUSB0', 115200):
     message = socket.recv()
-    celsius = ser.readline()
+    celsius = line
     celsius = celsius.rstrip()
     try:
-        celsius = int(celsius)
+        celsius = bytes(celsius)
     except:
         print "oof : %s" % celsius
-    time.sleep (1)  
+    time.sleep (1) 
     socket.send(celsius)
 
 ser.close()
