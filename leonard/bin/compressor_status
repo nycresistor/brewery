@@ -10,7 +10,7 @@ def read_gpio(rid):
     return value
 
 stat = read_gpio(2)
-stat = bytes(stat)
+stat = int(stat)
 
 if stat == 0:
     print "Off"
