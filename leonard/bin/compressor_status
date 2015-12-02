@@ -1,0 +1,21 @@
+#!/usr/bin/env python
+# matt@nycresistor.com
+
+import mraa
+import sys
+
+def read_gpio(rid):
+    x = mraa.Gpio(rid)
+    value = x.read()
+    return value
+
+stat = read_gpio(2)
+stat = bytes(stat)
+
+if stat == 0:
+    print "Off"
+elif stat == 1:
+    print "On"
+else:
+    print "Wtf?"
+
