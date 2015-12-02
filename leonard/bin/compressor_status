@@ -9,8 +9,12 @@ def read_gpio(rid):
     value = x.read()
     return value
 
-stat = read_gpio(2)
-stat = int(stat)
+try:
+    stat = read_gpio(2)
+    stat = int(stat)
+except:
+    print "Compressor Offline"
+    sys.exit(2)
 
 if stat == 0:
     print "Off"
