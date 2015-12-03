@@ -1,0 +1,28 @@
+#!/usr/bin/env python
+
+import zmq
+import sys
+import random
+
+from twitter import *
+
+
+port = "5559"
+context = zmq.Context()
+socket = context.socket(zmq.REQ)
+socket.connect ("tcp://localhost:%s" % port)
+client_id = random.randrange(1,10005)
+socket.send ("templs %s" % client_id)
+#  Get the reply.
+celsius = socket.recv()
+celsius = float(celsius)
+fahrenheit = 9.0/5.0 * celsius + 32
+
+config = {}
+execfile("config.py", config)
+
+twitter = Twitter( auth = OAuth(config["access_key"], config["access_secret"], config["consumer_key"], config["consumer_secret"]))
+
+new_status = "Hello, I'm a refridgerator.  I am currently at a temperature of %s F.  =/  Why the fuck am I on the internet?" % fahrenheit
+results = twitter.statuses.update(status = new_status)
+print "updated status: %s" % new_status
