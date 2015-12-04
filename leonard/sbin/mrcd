@@ -1,20 +1,36 @@
 #!/usr/bin/env python
 # matt@nycresistor.com
 
+import mraa
+import time
+import os
 import zmq
 import sys
 import random
 
-def tap_relay(rid):
-    x = mraa.Gpio(rid)
-    x.dir(mraa.DIR_OUT)
-    x.write(1)
+def get_stime():
+    get_stime = os.times()
+    return get_stime[4]
+
+global stime
+stime = get_stime()
+
+def tap_relay(rid, stime):
+    ntime = get_stime()
+    if ntime > (stime + 10):
+        x = mraa.Gpio(rid)
+        x.dir(mraa.DIR_OUT)
+        x.write(1)
+        stime = get_stime()
     return 0
 
-def untap_relay(rid):
-    x = mraa.Gpio(rid)
-    x.dir(mraa.DIR_OUT)
-    x.write(0)
+def untap_relay(rid, stime):
+    ntime = get_stime()
+    if ntime > (stime + 10):
+        x = mraa.Gpio(rid)
+        x.dir(mraa.DIR_OUT)
+        x.write(0)
+        stime = get_stime()
     return 0
 
 def read_gpio(rid):
@@ -24,28 +40,44 @@ def read_gpio(rid):
 
 def get_temp():
     client_port = "5559"
-    context = zmq.Context()
-    client_socket = context.socket(zmq.REQ)
+    client_context = zmq.Context()
+    client_socket = client_context.socket(zmq.REQ)
     client_socket.connect ("tcp://localhost:%s" % client_port)
     client_id = random.randrange(1,10005)
-    client_socket.send ("templs %s" % client_id)
-    #  Get the reply.
-    celsius = client_socket.recv()
-    return celsius
-    # celsius = float(celsius)
-    # fahrenheit = 9.0/5.0 * celsius + 32
+    client_socket.RCVTIMEO = 5000 
+    try:
+        client_socket.send ("templs %s" % client_id)
+        celsius = client_socket.recv().rstrip()
+    except:
+        return "FAIL"
+    try:
+        return float(celsius)
+    except (ValueError, TypeError):
+        return celsius
 
-port = "5560"
-context = zmq.Context()
-socket = context.socket(zmq.REP)
-socket.connect("tcp://localhost:%s" % port)
-server_id = random.randrange(1,10005)
+#port = "5560"
+#context = zmq.Context()
+#socket = context.socket(zmq.REP)
+#socket.connect("tcp://localhost:%s" % port)
+#server_id = random.randrange(1,10005)
 
 while True:
     #  Wait for next request from client
-    message = socket.recv()
+    # message = socket.recv()
     time.sleep (1)
-    celsius = get_temp()
-    socket.send(celsius)
+    # celsius = get_temp()
+    celsius = "FAIL"
+    while(celsius == "FAIL"):
+        celsius = get_temp()
+    celsius = float(celsius)
+    fahrenheit = 9.0/5.0 * celsius + 32
+    compressor_status = read_gpio(2)
+    if fahrenheit > 44:
+        if compressor_status == 0:
+            tap_relay(2, stime)
+    elif compressor_status == 1:
+        untap_relay(2, stime)
+    # socket.send(compressor_status)
+    
 
 
