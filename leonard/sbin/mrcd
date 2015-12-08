@@ -17,7 +17,7 @@ stime = get_stime()
 
 def tap_relay(rid, stime):
     ntime = get_stime()
-    if ntime > (stime + 10):
+    if ntime > (stime + 400):
         x = mraa.Gpio(rid)
         x.dir(mraa.DIR_OUT)
         x.write(1)
@@ -26,7 +26,7 @@ def tap_relay(rid, stime):
 
 def untap_relay(rid, stime):
     ntime = get_stime()
-    if ntime > (stime + 10):
+    if ntime > (stime + 400):
         x = mraa.Gpio(rid)
         x.dir(mraa.DIR_OUT)
         x.write(0)
@@ -72,7 +72,7 @@ while True:
     celsius = float(celsius)
     fahrenheit = 9.0/5.0 * celsius + 32
     compressor_status = read_gpio(2)
-    if fahrenheit > 44:
+    if fahrenheit > 39:
         if compressor_status == 0:
             tap_relay(2, stime)
     elif compressor_status == 1:

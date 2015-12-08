@@ -23,6 +23,6 @@ execfile("config.py", config)
 
 twitter = Twitter( auth = OAuth(config["access_key"], config["access_secret"], config["consumer_key"], config["consumer_secret"]))
 
-new_status = "Hello, I'm a refridgerator.  I am currently at a temperature of %s F.  That's pretty warm." % fahrenheit
+new_status = "I am currently at a temperature of %s F.  Compressor is online and under MY control! Buwhaahaha" % fahrenheit
 results = twitter.statuses.update(status = new_status)
 print "updated status: %s" % new_status
