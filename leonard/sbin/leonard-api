@@ -3,6 +3,7 @@
 import zmq
 import random
 import mraa
+import sys
 
 from flask import Flask
 app = Flask(__name__)
@@ -16,7 +17,7 @@ def read_gpio(rid):
 def hello_world():
     return 'leonard api'
 
-@app.route('compressor')
+@app.route('/compressor')
 def compressor():
     try:
         stat = read_gpio(2)
@@ -31,7 +32,7 @@ def compressor():
     else:
         return "wtf"
 
-@app.route('temp')
+@app.route('/temp')
 def temp():
     port = "5559"
     context = zmq.Context()
@@ -43,7 +44,8 @@ def temp():
     celsius = socket.recv()
     celsius = float(celsius)
     fahrenheit = 9.0/5.0 * celsius + 32
-    return fahrenheit
+    return str(fahrenheit)
 
 if __name__ == '__main__':
-    app.run(host='0.0.0.0')
+    # app.debug = True
+    app.run(host='0.0.0.0', port=4080)
