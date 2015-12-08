@@ -1,0 +1,10 @@
+[Unit]
+Description="Leonard REST API"
+After=rtdd
+
+[Service]
+Environment="HOME=/home/root"
+#User=root
+ExecStart=/usr/sbin/leonard-api
+Restart=always
+RestartSec=10s

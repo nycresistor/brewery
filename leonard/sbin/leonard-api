@@ -6,6 +6,9 @@ import mraa
 import sys
 
 from flask import Flask
+from flask import jsonify
+
+
 app = Flask(__name__)
 
 def read_gpio(rid):
@@ -26,11 +29,11 @@ def compressor():
         return "Compressor Offline"
 
     if stat == 0:
-        return "off"
+        return jsonify(compressor="off")
     elif stat == 1:
-        return "on"
+        return jsonify(compressor="on")
     else:
-        return "wtf"
+        return jsonify(compressor="wtf")
 
 @app.route('/temp')
 def temp():
@@ -44,8 +47,8 @@ def temp():
     celsius = socket.recv()
     celsius = float(celsius)
     fahrenheit = 9.0/5.0 * celsius + 32
-    return str(fahrenheit)
+    return jsonify(temp=fahrenheit)
 
 if __name__ == '__main__':
-    # app.debug = True
-    app.run(host='0.0.0.0', port=4080)
+    app.debug = True
+    app.run(host='0.0.0.0', port=80)
