@@ -1,0 +1,39 @@
+{
+  "batch-id": 23,
+  "batch-name": "Manhattan Special Coffee Stout",
+  "grain-bill": {
+    "Maris Otter": "14.25 lbs",
+    "Flaked Barley": "2 lbs",
+    "Kilned Coffee": "1 lbs",
+    "Roasted Barley": "1 lbs"
+  },
+  "hopping": {
+    "60 mins":{
+       "Kent Goldings": {
+            "weight" : "1 oz",
+            "AA%": ""
+        }
+    },
+    "10 mins":{
+        "Kent Goldings": {
+            "weight" : "1 oz",
+            "AA%" : ""
+        }
+    },
+    "5 mins":{
+        "Whirlifloc": "1 tablet",
+        "Servomices": "1 capsule"
+    }
+  },
+  "yeast": "2x 1084 Irish Ale",
+  "mash time": "60 mins",
+  "mash strike": "166",
+  "mash init": "154",
+  "mash final": "---",
+  "gravities": {
+      "pre-boil": "1.030",
+      "OG": "1.046",
+      "FG": "",
+      "ABV": ""
+  }
+}
