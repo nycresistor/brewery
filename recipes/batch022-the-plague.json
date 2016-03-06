@@ -38,4 +38,10 @@
       "FG": "1.014",
       "ABV": "4.07%"
   }
+  "post-barrel gravities": {
+      "Age": "4 Months",
+      "Size": "5 Gallon",
+      "FG": "",
+      "ABV": ""
+  }
 }
