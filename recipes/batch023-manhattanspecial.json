@@ -10,29 +10,25 @@
   "hopping": {
     "60 mins":{
        "Kent Goldings": {
-            "weight" : "1 oz",
+            "weight" : "2 oz",
             "AA%": ""
         }
     },
-    "10 mins":{
-        "Kent Goldings": {
-            "weight" : "1 oz",
+    "5 mins":{
+        "Candi Syrup ( Brooklyn Brewery )": {
+            "weight" : "1 lb",
             "AA%" : ""
         }
     },
-    "5 mins":{
-        "Whirlifloc": "1 tablet",
-        "Servomices": "1 capsule"
-    }
   },
   "yeast": "2x 1084 Irish Ale",
-  "mash time": "60 mins",
-  "mash strike": "166",
-  "mash init": "154",
+  "mash time": "mystery",
+  "mash strike": "140",
+  "mash init": "144",
   "mash final": "---",
   "gravities": {
-      "pre-boil": "1.030",
-      "OG": "1.046",
+      "pre-boil": "1.040",
+      "OG": "1.076",
       "FG": "",
       "ABV": ""
   }
