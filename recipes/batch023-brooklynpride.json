@@ -1,0 +1,38 @@
+{
+  "batch-id": 23,
+  "batch-name": "Brooklyn Pride ( stout )",
+  "grain-bill": {
+    "Maris Otter": "14.25 lbs",
+    "Flaked Barley": "2 lbs",
+    "Kilned Coffee": "1 lbs",
+    "Roasted Barley": "1 lbs"
+  },
+  "hopping": {
+    "60 mins":{
+       "Kent Goldings": {
+            "weight" : "2 oz",
+            "AA%": ""
+        }
+    },
+    "5 mins":{
+        "Candi Syrup ( Brooklyn Brewery )": {
+            "weight" : "1 lb",
+            "AA%" : ""
+        }
+    },
+  },
+  "secondary":{
+      "manhattan special": "38 oz"
+  },
+  "yeast": "2x 1084 Irish Ale",
+  "mash time": "mystery",
+  "mash strike": "140",
+  "mash init": "144",
+  "mash final": "---",
+  "gravities": {
+      "pre-boil": "1.040",
+      "OG": "1.076",
+      "FG": "1.010",
+      "ABV": "8.6%"
+  }
+}
