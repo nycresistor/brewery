@@ -7,7 +7,7 @@
     "brown malt": "2 lbs",
     "Caramalt 23L": "0.625 lbs",
     "Flaked Oats": "0.625 lbs",
-    "Flaked Wheat": "1 lbs",
+    "Flaked Wheat": "1 lbs"
   },
   "hopping": {
     "60 mins":{
@@ -37,7 +37,7 @@
       "OG": "1.045",
       "FG": "1.014",
       "ABV": "4.07%"
-  }
+  },
   "post-barrel gravities": {
       "Age": "4 Months",
       "Size": "5 Gallon",
