@@ -13,8 +13,8 @@ Application
 
 boot order :
 
-sbin/zmqd - zeromq queue daemon
-sbin/rtdd - rtd sensor monitoring daemon
-sbin/lcdd - lcd driver daemon
-sbin/mrcd - mechanical relay control daemon
+  1 sbin/zmqd - zeromq queue daemon
+  2 sbin/rtdd - rtd sensor monitoring daemon
+  3 sbin/lcdd - lcd driver daemon
+  4 sbin/mrcd - mechanical relay control daemon
  
