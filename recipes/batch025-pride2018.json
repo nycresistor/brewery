@@ -1,0 +1,38 @@
+{
+  "batch-id": 23,
+  "batch-name": "",
+  "grain-bill": {
+    "Belgian Pilsner": "15 lbs",
+    "Munich Dark": "3 lbs",
+    "Black malt": "1 lbs",
+    "Midnight Weat": "0.5 lbs",
+    "Pale Chocolate": "0.5 lbs",
+    "Special B": "0.5 lbs",
+    "Caramunich 35L": "0.5 lbs"
+  },
+  "hopping": {
+    "60 mins":{
+       "Hallertau": {
+            "weight" : "3 oz",
+            "AA%": ""
+        }
+    },
+    "5 mins":{
+        "Candi Syrup ( )": {
+            "weight" : "1 lb",
+            "AA%" : ""
+        }
+    }
+  },
+  "yeast": "Trappist High Gravity Wyeast 3787",
+  "mash time": "",
+  "mash strike": "",
+  "mash init": "",
+  "mash final": "",
+  "gravities": {
+      "pre-boil": "",
+      "OG": "",
+      "FG": "",
+      "ABV": ""
+  }
+}
