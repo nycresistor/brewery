@@ -2,17 +2,34 @@
 # matt@nycresistor.com
 
 import zmq
-import sys
 import random
+import argparse
 
-port = "5559"
-context = zmq.Context()
-socket = context.socket(zmq.REQ)
-socket.connect ("tcp://localhost:%s" % port)
-client_id = random.randrange(1,10005)
-socket.send ("templs %s" % client_id)
-#  Get the reply.
-celsius = socket.recv()
-celsius = float(celsius)
-fahrenheit = 9.0/5.0 * celsius + 32
-print fahrenheit
+
+def main():
+    global master_count
+    master_count = 0
+    parser = argparse.ArgumentParser(description='leonard temperature')
+    parser.add_argument(
+        '-f', '--fahrenheit', action="store_true",
+        help='get fahrenheit')
+    args = parser.parse_args()
+
+    port = "5559"
+    context = zmq.Context()
+    socket = context.socket(zmq.REQ)
+    socket.connect("tcp://localhost:%s" % port)
+    client_id = random.randrange(1, 10005)
+    socket.send("templs %s" % client_id)
+    #  Get the reply.
+    celsius = socket.recv()
+    celsius = float(celsius)
+    if (args.fahrenheit):
+        fahrenheit = 9.0 / 5.0 * celsius + 32
+        print fahrenheit
+    else:
+        print celsius
+
+
+if __name__ == "__main__":
+    main()
